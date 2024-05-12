@@ -1,0 +1,14 @@
+{
+  "scripts": {
+    "dev": "nuxt dev",
+    "build": "nuxt build",
+    "start": "nuxt start",
+    "generate": "nuxt generate"
+  },
+  "dependencies": {
+    "@nuxtjs/tailwindcss": "^6",
+    "@nuxtjs/color-mode": "^3.2.0",
+    "daisyui": "^3",
+    "nuxt": "^3"
+  }
+}
