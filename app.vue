@@ -1,5 +1,6 @@
 <template>
-  <div class="drawer">
+ 
+ <div class="drawer z-50">
     <input id="my-drawer-3" type="checkbox" class="drawer-toggle" />
     <div class="drawer-content flex flex-col">
       <div class="w-full navbar bg-base-300 sticky top-0 z-50">
@@ -38,59 +39,12 @@
           <switcher></switcher>
         </div>
       </div>
-      <div class="hero min-h-screen bg-base-200">
-        <div class="hero-content text-center">
-          <div class="max-w-md">
-            <h1 class="text-5xl font-bold">Hello there</h1>
-            <p class="py-6">
-              Provident cupiditate voluptatem et in. Quaerat fugiat ut assumenda
-              excepturi exercitationem quasi. In deleniti eaque aut repudiandae
-              et a id nisi.
-            </p>
-            <button class="btn btn-primary">Get Started</button>
-          </div>
-        </div>
-      </div>
-
-      <div class="collapse bg-base-200">
-        <input type="radio" name="my-accordion-1" checked="checked" />
-        <div class="collapse-title text-xl font-medium">
-          Click to open this one and close others
-        </div>
-        <div class="collapse-content">
-          <p>hello</p>
-        </div>
-      </div>
-      <div class="collapse bg-base-200">
-        <input type="radio" name="my-accordion-1" />
-        <div class="collapse-title text-xl font-medium">
-          Click to open this one and close others
-        </div>
-        <div class="collapse-content">
-          <p>hello</p>
-        </div>
-      </div>
-      <div class="collapse bg-base-200">
-        <input type="radio" name="my-accordion-1" />
-        <div class="collapse-title text-xl font-medium">
-          Click to open this one and close others
-        </div>
-        <div class="collapse-content">
-          <p>hello</p>
-        </div>
-      </div>
     </div>
-    <div class="drawer-side">
-      <label
-        for="my-drawer-3"
-        aria-label="close sidebar"
-        class="drawer-overlay"
-      ></label>
-      <ul class="menu p-4 w-80 min-h-full bg-base-200">
-        <li><a>Sidebar Item 1</a></li>
-        <li><a>Sidebar Item 2</a></li>
-      </ul>
-    </div>
+   <drawer></drawer>
+  </div>
+  <div class=" flex flex-col">
+    <hero></hero>
+      <accordian></accordian>
   </div>
   <footer class="footer p-10 bg-neutral text-neutral-content">
     <aside>
@@ -155,11 +109,8 @@
 
 <script setup>
 import switcher from '/components/switcher.vue';
-const colorMode = useColorMode();
-const themes = ['winter', 'synthwave']; // Your available themes
+import accordian from '/components/accordian.vue';
+import drawer from '/components/drawer.vue';
+import hero from '/components/hero.vue';
 
-const toggleTheme = () => {
-  colorMode.preference =
-    colorMode.preference === 'winter' ? 'synthwave' : 'winter';
-};
 </script>

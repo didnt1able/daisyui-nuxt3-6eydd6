@@ -6,9 +6,10 @@
     "generate": "nuxt generate"
   },
   "dependencies": {
-    "@nuxtjs/tailwindcss": "^6",
     "@nuxtjs/color-mode": "^3.2.0",
+    "@nuxtjs/tailwindcss": "^6",
     "daisyui": "^3",
+    "gsap": "^3.12.5",
     "nuxt": "^3"
   }
 }
